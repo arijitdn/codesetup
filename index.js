@@ -60,6 +60,7 @@ program.version("1.0.0").action(async () => {
   try {
     await git.clone(repoUrl, projectPath);
     spinner.succeed("Express starter template is ready to use!");
+    await fs.remove(path.join(projectPath, ".git"));
 
     process.chdir(projectPath);
 

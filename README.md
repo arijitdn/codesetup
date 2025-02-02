@@ -4,13 +4,11 @@
 
 ## Features
 
-- Interactive prompts for creating a new Express project
-- Supports TypeScript templates.
-- Initializes a Git repository and installs dependencies
+- Interactive prompts for creating new starter projects.
+- [TODO]: Supports both Javascript and TypeScript templates.
+- Installs dependencies automatically with your favourite package manager.
 
 ## Usage
-
-After installation, run the CLI command to create a new Node.js application:
 
 ```
 npx codesetup
