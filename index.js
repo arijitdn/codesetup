@@ -45,7 +45,7 @@ program.version("1.0.0").action(async () => {
   const projectPath = path.join(process.cwd(), projectName);
   const packageManager = answers["package-manager"];
 
-  if (fs.exists(projectPath)) {
+  if (fs.existsSync(projectPath)) {
     console.error(chalk.red(`Error: Directory ${projectName} already exists.`));
     process.exit(1);
   }
