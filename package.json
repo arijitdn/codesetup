@@ -1,0 +1,28 @@
+{
+  "name": "codesetup",
+  "version": "1.0.0",
+  "description": "A CLI tool for setting up projects",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "codesetup": "./index.js"
+  },
+  "keywords": [
+    "cli",
+    "starter-kit",
+    "template"
+  ],
+  "author": "Arijit Debnath",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.3.3",
+    "ora": "^8.2.0",
+    "simple-git": "^3.27.0"
+  }
+}
