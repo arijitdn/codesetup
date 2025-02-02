@@ -36,6 +36,10 @@ program.version("1.0.0").action(async () => {
           name: "yarn",
           value: "yarn",
         },
+        {
+          name: "bun",
+          value: "bun",
+        },
       ],
       default: "npm",
     },
