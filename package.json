@@ -1,6 +1,6 @@
 {
   "name": "codesetup",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A CLI tool for setting up projects",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,13 +17,6 @@
     "build": "tsup",
     "upload": "pnpm build && npm publish"
   },
-  "keywords": [
-    "cli",
-    "starter-kit",
-    "template"
-  ],
-  "author": "Arijit Debnath",
-  "license": "MIT",
   "dependencies": {
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
@@ -38,5 +31,16 @@
     "tsup": "^8.3.6",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
-  }
+  },
+  "author": "Arijit Debnath",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arijitdn/codesetup.git"
+  },
+  "keywords": [
+    "cli",
+    "starter-kit",
+    "template"
+  ]
 }

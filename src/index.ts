@@ -6,6 +6,7 @@ import path from "path";
 import fs from "fs-extra";
 import inquirer from "inquirer";
 import setupExpressStarter from "./lib/setupExpressStarter.js";
+import setupExpressStarterNoColors from "./lib/setupExpressStarterNoColors.js";
 
 const program = new Command();
 
@@ -19,6 +20,10 @@ program.version("1.0.0").action(async () => {
         {
           name: "express-starter-template",
           value: "express-starter-template",
+        },
+        {
+          name: "express-starter-template (no colors)",
+          value: "express-starter-template-no-colors",
         },
       ],
       default: "express-starter-template",
@@ -68,6 +73,15 @@ program.version("1.0.0").action(async () => {
   switch (projectType) {
     case "express-starter-template": {
       await setupExpressStarter(projectName, projectPath, packageManager);
+      break;
+    }
+
+    case "express-starter-template-no-colors": {
+      await setupExpressStarterNoColors(
+        projectName,
+        projectPath,
+        packageManager
+      );
       break;
     }
 
